@@ -1,0 +1,11 @@
+public class MyTester {
+    private MyLinkedList<Integer> emptyIntegerList;
+    private MyLinkedList<String> threeStringList;
+    private String[] strData = {"CSE 12", "Paul Cao", "Christine Alvarado"};
+
+    public static void main(String[] args){
+        this.emptyIntegerList.add(0, 12);
+        System.out.println(this.emptyIntegerList.tail.prev.data);
+    }
+   
+}
