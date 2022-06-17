@@ -13,7 +13,8 @@
  * rear, and front. This class includes several methods to access and 
  * manipulate the local variables.
  */
-@SuppressWarnings("unchecked")
+
+ 
 public class MyDeque<E> implements DequeInterface<E> {
     //Instance variables
     Object[] data;
@@ -76,7 +77,7 @@ public class MyDeque<E> implements DequeInterface<E> {
     @Override
     public void addFirst(E element){
         if(element == null){
-            throw new IllegalArgumentException();
+            throw new NullPointerException();
         }
         if(size == data.length){
             expandCapacity();
@@ -97,7 +98,7 @@ public class MyDeque<E> implements DequeInterface<E> {
     @Override
     public void addLast(E element){
         if(element == null){
-            throw new IllegalArgumentException();
+            throw new NullPointerException();
         }
         if(size == data.length){
             expandCapacity();
